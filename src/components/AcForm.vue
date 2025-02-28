@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { type AC_Games } from "./scripts/ac_data"; //Revoir le path
+import { ref } from "vue"; //Revoir le path
+import { type AC_Game } from "../scripts/types.ts";
 const games = ref<AC_Game[]>([]); //tableau des jeux ajouter seulement
 
 const newGame = ref<AC_Game>({
@@ -11,7 +11,15 @@ const newGame = ref<AC_Game>({
   setting: "",
   price: 0,
   quantity: 1, // Valeur par défaut
+  image: "",
 });
+
+const addGame = () => {
+  if (newGame.value.title.trim() === "") return;
+  if (newGame.value.main_character.trim() === "") return;
+  if (newGame.value.setting.trim() === "") return;
+  if (newGame.value.image.trim() === "") return;
+};
 </script>
 
 <template>
@@ -79,7 +87,7 @@ const newGame = ref<AC_Game>({
 
     <h3>Liste des jeux ajoutés</h3>
     <ul class="list-group">
-      <li v-for="AC_Game in AC_Games" :key="AC_Game.id" class="list-group-item">
+      <li v-for="AC_Game in games" :key="AC_Game.id" class="list-group-item">
         <strong>{{ AC_Game.title }}</strong> - {{ AC_Game.main_character }} -
         {{ AC_Game.setting }} - {{ AC_Game.price }}€
       </li>

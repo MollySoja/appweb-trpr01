@@ -6,4 +6,5 @@ export interface AC_Game {
   setting: string;
   price: number;
   quantity: number;
+  image: string;
 }
