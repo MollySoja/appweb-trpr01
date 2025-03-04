@@ -1,16 +1,27 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { defineEmits } from "vue";
+
+const emit = defineEmits(["toggle-view"]);
+</script>
 
 <template>
-  <!-- source de l'image: Chat GPT, je ne me souvenais plus comment inclure une image alors source: https://www.w3schools.com/tags/tag_img.asp-->
   <header class="bg-dark text-white py-2">
     <div class="container d-flex justify-content-center align-items-center">
       <img src="../assets/ac_logo.webp" alt="ac_logo" width="50" class="me-4" />
-      <!--class="me-4" provient de chat GPT-->
       <h1 class="h3">Magasin de Jeux Assassin's Creed</h1>
     </div>
   </header>
-</template>
 
-<style scoped></style>
+  <nav class="bg-light py-2">
+    <div class="container d-flex justify-content-center">
+      <button class="btn btn-primary mx-2" @click="emit('toggle-view', true)">
+        Voir la liste de jeux
+      </button>
+      <button class="btn btn-success mx-2" @click="emit('toggle-view', false)">
+        Ajouter un jeu
+      </button>
+    </div>
+  </nav>
+</template>
 
 <style scoped></style>

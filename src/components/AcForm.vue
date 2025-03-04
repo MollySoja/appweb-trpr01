@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { ref } from "vue"; //Revoir le path
-import { type AC_Game } from "../scripts/types.ts";
-const games = ref<AC_Game[]>([]); //tableau des jeux ajouter seulement
+import { ref } from "vue";
+import { AC_Games } from "../scripts/ac_data";
+import type { AC_Game } from "../scripts/types";
 
 const newGame = ref<AC_Game>({
   id: 0,
@@ -19,11 +19,32 @@ const addGame = () => {
   if (newGame.value.main_character.trim() === "") return;
   if (newGame.value.setting.trim() === "") return;
   if (newGame.value.image.trim() === "") return;
+
+  // Assigner un ID unique
+  newGame.value.id = Date.now(); // Utilisation de Date.now() pour créer un ID unique
+
+  AC_Games.push({ ...newGame.value });
+
+  // Réinitialiser le formulaire après l'ajout
+  resetForm();
+};
+
+const resetForm = () => {
+  newGame.value = {
+    id: 0,
+    title: "",
+    description: "",
+    main_character: "",
+    setting: "",
+    price: 0,
+    quantity: 1,
+    image: "",
+  };
 };
 </script>
 
 <template>
-  <!-- Form et plupart du Bootstrap generer par chat GPT -->
+  <!-- Form et la plupart du Bootstrap généré par ChatGPT -->
   <div class="container mt-4">
     <h2 class="mb-4">Ajouter un jeu Assassin's Creed</h2>
 
@@ -82,16 +103,24 @@ const addGame = () => {
         />
       </div>
 
+      <div class="mb-3">
+        <label for="quantity" class="form-label">Quantité :</label>
+        <input
+          id="quantity"
+          type="number"
+          v-model.number="newGame.quantity"
+          min="1"
+          class="form-control"
+        />
+      </div>
+
+      <div class="mb-3">
+        <label for="image" class="form-label">Image :</label>
+        <input id="image" v-model="newGame.image" class="form-control" />
+      </div>
+
       <button type="submit" class="btn btn-primary">Ajouter le jeu</button>
     </form>
-
-    <h3>Liste des jeux ajoutés</h3>
-    <ul class="list-group">
-      <li v-for="AC_Game in games" :key="AC_Game.id" class="list-group-item">
-        <strong>{{ AC_Game.title }}</strong> - {{ AC_Game.main_character }} -
-        {{ AC_Game.setting }} - {{ AC_Game.price }}€
-      </li>
-    </ul>
   </div>
 </template>
 
