@@ -126,7 +126,11 @@ const duplicateGame = (_gameId: number) => {
     >
       <div class="card h-100 d-flex flex-column">
         <img
-          :src="validateImage(game.image) ? game.image : placeholderImage"
+          :src="
+            validateImage(game.image)
+              ? '/src/assets/acgamecovers/' + game.image
+              : placeholderImage
+          "
           class="card-img-top clickable-image"
           :alt="game.title"
         />

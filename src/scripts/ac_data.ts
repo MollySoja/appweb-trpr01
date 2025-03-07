@@ -143,7 +143,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Bagdad - 861",
     price: 28.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACMIRAGE.jpg",
+    image: "ACMIRAGE.jpg",
   },
   {
     id: 14,
