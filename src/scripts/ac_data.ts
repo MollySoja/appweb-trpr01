@@ -159,7 +159,7 @@ export const AC_Games: AC_Game[] = [
 ];
 
 //TOTALEMENT GENERER PAR CHAT GPT
-const exportToCSV = () => {
+export const exportToCSV = () => {
   // Définit les en-têtes du CSV
   const headers = [
     "ID",
