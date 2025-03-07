@@ -11,7 +11,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Terre Sainte (Jérusalem, Damas, Acre) - 1191",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/AC1.jpg",
+    image: "/assets/acgamecovers/AC1.jpg",
   },
   {
     id: 2,
