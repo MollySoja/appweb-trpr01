@@ -6,10 +6,11 @@ import { isEditing } from "../scripts/getFormState.ts";
 import { isDuplicating } from "../scripts/getFormState.ts";
 import { gameId } from "../scripts/getGameId.ts";
 import { defineEmits } from "vue";
+import AC_PLACEHOLDER from "../assets/acgamecovers/AC_PLACEHOLDER.png";
+
+const placeholder = AC_PLACEHOLDER;
 
 const emit = defineEmits(["toggle-view"]);
-
-const placeholderImage = "src/assets/acgamecovers/AC_PLACEHOLDER.png"; // Remplacez par le chemin réel de votre image de remplacement
 
 const searchQuery = ref("");
 //chat GPT
@@ -126,11 +127,7 @@ const duplicateGame = (_gameId: number) => {
     >
       <div class="card h-100 d-flex flex-column">
         <img
-          :src="
-            validateImage(game.image)
-              ? '/appweb-trpr01/src/assets/acgamecovers/' + game.image
-              : '/appweb-trpr01//src/assets/acgamecovers/' + placeholderImage
-          "
+          :src="validateImage(game.image) ? game.image : placeholder"
           class="card-img-top clickable-image"
           :alt="game.title"
         />
