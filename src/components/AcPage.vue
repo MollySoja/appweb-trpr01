@@ -9,16 +9,17 @@ import Footer from "./Footer.vue";
 
 const showGames = ref(true);
 </script>
-<!-- Chat GPT pour separer les differents composants enfants et pour le css-->
 <template>
   <Header @toggle-view="showGames = $event" />
-
-  <div class="d-flex justify-content-center mt-4">
-    <div v-if="showGames" class="flex-fill p-2" style="max-width: 70%">
+  <!--chat GPT pour le bootstrap-->
+  <div class="d-flex justify-content-center bg-dark">
+    <div v-if="showGames" class="flex-fill p-2" style="max-width: 80%">
+      <!-- chat GPT fait en sorte que les cards sont plus petites-->
       <AcGames @toggle-view="showGames = $event" />
     </div>
 
-    <div v-else class="flex-fill p-2" style="max-width: 40%">
+    <div v-else class="flex-fill p-2">
+      <!--chat GPT pour le bootstrap-->
       <AcForm />
     </div>
   </div>
@@ -26,10 +27,4 @@ const showGames = ref(true);
   <Footer />
 </template>
 
-<style scoped>
-.d-flex {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-</style>
+<style scoped></style>

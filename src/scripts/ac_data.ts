@@ -157,3 +157,46 @@ export const AC_Games: AC_Game[] = [
     image: "src/assets/acgamecovers/ACSHADOWS.avif",
   },
 ];
+
+//TOTALEMENT GENERER PAR CHAT GPT!!!
+export const exportToCSV = () => {
+  // Définit les en-têtes du CSV
+  const headers = [
+    "ID",
+    "Titre",
+    "Description",
+    "Personnage principal",
+    "Lieu",
+    "Prix",
+    "Quantité",
+  ];
+
+  // Convertit les données en format CSV
+  const rows = AC_Games.map((game) => [
+    game.id,
+    `"${game.title}"`, // Ajout de guillemets pour éviter les problèmes de virgules dans les titres
+    `"${game.description}"`,
+    `"${game.main_character}"`,
+    `"${game.setting}"`,
+    game.price.toFixed(2), // Format prix avec 2 décimales
+    game.quantity,
+  ]);
+
+  // Construit le contenu du CSV
+  const csvContent = [
+    headers.join(";"), // Utilisation du point-virgule comme séparateur (modifiable selon besoin)
+    ...rows.map((row) => row.join(";")),
+  ].join("\n");
+
+  // Crée un Blob et un lien de téléchargement
+  const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+  const url = URL.createObjectURL(blob);
+
+  // Crée et clique sur un lien invisible pour télécharger le fichier
+  const link = document.createElement("a");
+  link.href = url;
+  link.setAttribute("download", "liste_jeux_AC.csv");
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};

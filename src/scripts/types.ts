@@ -1,3 +1,4 @@
+//objet AC_Game
 export interface AC_Game {
   id: number;
   title: string;
