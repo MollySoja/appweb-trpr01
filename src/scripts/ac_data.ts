@@ -11,7 +11,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Terre Sainte (Jérusalem, Damas, Acre) - 1191",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/AC1.jpg",
+    image: "AC1.jpg",
   },
   {
     id: 2,
@@ -22,7 +22,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Italie (Florence, Venise, Forli, Rome) - 1476-1499",
     price: 5.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/AC2.jpg",
+    image: "AC2.jpg",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Rome - 1500-1507",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACBROTHERHOOD.jpg",
+    image: "ACBROTHERHOOD.jpg",
   },
   {
     id: 4,
@@ -44,7 +44,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Constantinople - 1511",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACREVELATIONS.jpg",
+    image: "ACREVELATIONS.jpg",
   },
   {
     id: 5,
@@ -55,7 +55,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Amérique coloniale - 1754-1783",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/AC3.webp",
+    image: "AC3.webp",
   },
   {
     id: 6,
@@ -66,7 +66,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Caraïbes - 1715-1722",
     price: 15.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/AC4.jpg",
+    image: "AC4.jpg",
   },
   {
     id: 7,
@@ -77,7 +77,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Amérique du Nord, Atlantique Nord - 1752-1760",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACROGUE.jpeg",
+    image: "ACROGUE.jpeg",
   },
   {
     id: 8,
@@ -88,7 +88,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Paris - 1789-1794",
     price: 7.5,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACUNITY.jpg",
+    image: "ACUNITY.jpg",
   },
   {
     id: 9,
@@ -99,7 +99,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Londres - 1868",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACSYNDICATE.jpg",
+    image: "ACSYNDICATE.jpg",
   },
   {
     id: 10,
@@ -110,7 +110,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Égypte antique - 49-44 av. J.-C.",
     price: 19.5,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACORIGINS.jpg",
+    image: "ACORIGINS.jpg",
   },
   {
     id: 11,
@@ -121,7 +121,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Grèce antique - 431-422 av. J.-C.",
     price: 16.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACODYSSEY.webp",
+    image: "ACODYSSEY.webp",
   },
   {
     id: 12,
@@ -132,7 +132,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Angleterre et Norvège - IXe siècle",
     price: 20.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACVALLHALLA.jpg",
+    image: "ACVALLHALLA.jpg",
   },
   {
     id: 13,
@@ -154,7 +154,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Japon - Époque Sengoku",
     price: 89.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACSHADOWS.avif",
+    image: "ACSHADOWS.avif",
   },
 ];
 

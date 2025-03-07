@@ -128,8 +128,8 @@ const duplicateGame = (_gameId: number) => {
         <img
           :src="
             validateImage(game.image)
-              ? '/src/assets/acgamecovers/' + game.image
-              : placeholderImage
+              ? '/appweb-trpr01/src/assets/acgamecovers/' + game.image
+              : '/appweb-trpr01//src/assets/acgamecovers/' + placeholderImage
           "
           class="card-img-top clickable-image"
           :alt="game.title"
