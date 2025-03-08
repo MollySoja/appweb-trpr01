@@ -1,4 +1,18 @@
 import { type AC_Game } from "../scripts/types";
+import AC1 from "../assets/AC1.jpg";
+import AC2 from "../assets/AC2.jpg";
+import AC3 from "../assets/AC3.webp";
+import AC4 from "../assets/AC4.jpg";
+import ACROGUE from "../assets/ACROGUE.jpeg";
+import ACBROTHERHOOD from "../assets/ACBROTHERHOOD.jpg";
+import ACREVELATIONS from "../assets/ACREVELATIONS.jpg";
+import ACUNITY from "../assets/ACUNITY.jpg";
+import ACSYNDICATE from "../assets/ACSYNDICATE.jpg";
+import ACORIGINS from "../assets/ACORIGINS.jpg";
+import ACODYSSEY from "../assets/ACODYSSEY.webp";
+import ACVALLHALLAH from "../assets/ACVALLHALLA.jpg";
+import ACMIRAGE from "../assets/ACMIRAGE.jpg";
+import ACSHADOWS from "../assets/ACSHADOWS.avif";
 
 //Tableau de donnes aidez de chat GPT pour l'utilisation de ac_datas (idee originelle de moi et Jimmy)
 export const AC_Games: AC_Game[] = [
@@ -11,7 +25,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Terre Sainte (Jérusalem, Damas, Acre) - 1191",
     price: 19.99,
     quantity: 1,
-    image: "/assets/acgamecovers/AC1.jpg",
+    image: AC1,
   },
   {
     id: 2,
@@ -22,7 +36,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Italie (Florence, Venise, Forli, Rome) - 1476-1499",
     price: 5.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/AC2.jpg",
+    image: AC2,
   },
   {
     id: 3,
@@ -33,7 +47,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Rome - 1500-1507",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACBROTHERHOOD.jpg",
+    image: ACBROTHERHOOD,
   },
   {
     id: 4,
@@ -44,7 +58,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Constantinople - 1511",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACREVELATIONS.jpg",
+    image: ACREVELATIONS,
   },
   {
     id: 5,
@@ -55,7 +69,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Amérique coloniale - 1754-1783",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/AC3.webp",
+    image: AC3,
   },
   {
     id: 6,
@@ -66,7 +80,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Caraïbes - 1715-1722",
     price: 15.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/AC4.jpg",
+    image: AC4,
   },
   {
     id: 7,
@@ -77,7 +91,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Amérique du Nord, Atlantique Nord - 1752-1760",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACROGUE.jpeg",
+    image: ACROGUE,
   },
   {
     id: 8,
@@ -88,7 +102,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Paris - 1789-1794",
     price: 7.5,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACUNITY.jpg",
+    image: ACUNITY,
   },
   {
     id: 9,
@@ -99,7 +113,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Londres - 1868",
     price: 19.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACSYNDICATE.jpg",
+    image: ACSYNDICATE,
   },
   {
     id: 10,
@@ -110,7 +124,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Égypte antique - 49-44 av. J.-C.",
     price: 19.5,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACORIGINS.jpg",
+    image: ACORIGINS,
   },
   {
     id: 11,
@@ -121,7 +135,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Grèce antique - 431-422 av. J.-C.",
     price: 16.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACODYSSEY.webp",
+    image: ACODYSSEY,
   },
   {
     id: 12,
@@ -132,7 +146,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Angleterre et Norvège - IXe siècle",
     price: 20.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACVALLHALLA.jpg",
+    image: ACVALLHALLAH,
   },
   {
     id: 13,
@@ -143,7 +157,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Bagdad - 861",
     price: 28.0,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACMIRAGE.jpg",
+    image: ACMIRAGE,
   },
   {
     id: 14,
@@ -154,7 +168,7 @@ export const AC_Games: AC_Game[] = [
     setting: "Japon - Époque Sengoku",
     price: 89.99,
     quantity: 1,
-    image: "src/assets/acgamecovers/ACSHADOWS.avif",
+    image: ACSHADOWS,
   },
 ];
 

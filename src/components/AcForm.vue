@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { ref, watchEffect } from "vue";
-import { AC_Games } from "../scripts/ac_data";
+import { AC_Games } from "../scripts/ac_data.ts";
 import { isEditing } from "../scripts/getFormState.ts";
 import { isDuplicating } from "../scripts/getFormState.ts";
 import { gameId } from "../scripts/getGameId.ts";
-import type { AC_Game } from "../scripts/types";
+import type { AC_Game } from "../scripts/types.ts";
 
 //chat GPT
 // Définir le nouvel objet de jeu

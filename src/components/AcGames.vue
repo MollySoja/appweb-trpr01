@@ -6,7 +6,7 @@ import { isEditing } from "../scripts/getFormState.ts";
 import { isDuplicating } from "../scripts/getFormState.ts";
 import { gameId } from "../scripts/getGameId.ts";
 import { defineEmits } from "vue";
-import AC_PLACEHOLDER from "../assets/acgamecovers/AC_PLACEHOLDER.png";
+import AC_PLACEHOLDER from "../assets/AC_PLACEHOLDER.png";
 
 const placeholder = AC_PLACEHOLDER;
 
